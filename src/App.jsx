@@ -11,6 +11,9 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Location from "./components/Location";
 import Project from "./components/Project";
+import Team from "./components/Team";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 const Layout = ({ children }) => (
   <>
@@ -28,6 +31,10 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout><Hero /><Benefits /><Collaboration /><Services /><Location /></Layout>} />
       <Route path="/projects" element={<Layout><Project /></Layout>} /> {/* New route for /projects */}
+      <Route path="/teams" element={<Layout><Team /></Layout>} /> {/* New route for /projects */}
+      <Route path="/contact" element={<Layout><Contact /></Layout>} /> {/* New route for /projects */}
+      <Route path="/about" element={<Layout><About /></Layout>} /> {/* New route for /projects */}
+
       {/* Define additional routes here */}
     </Routes>
   );

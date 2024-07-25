@@ -44,8 +44,8 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Mails",
-    url: "/contact",
+    title: "About",
+    url: "/about",
   },
   {
     id: "2",
@@ -55,7 +55,7 @@ export const navigation = [
   {
     id: "3",
     title: "Personnel",
-    url: "/personnel",
+    url: "/teams",
     onlyMobile: true,
   },
   {
