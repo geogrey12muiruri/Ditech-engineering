@@ -117,7 +117,7 @@ const HeroCarousel = () => {
             />
           </svg>
           <span className="sr-only">Next</span>
-        </span>
+        </span>      
       </button>
     </div>
   );
