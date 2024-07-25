@@ -35,7 +35,7 @@ const images = [
     src: slideImage5,
     alt: "Image 5",
     caption: "Nairobi water Distribution Master Plan",
-    description: "Description for Image 5"
+    description: "The project involved performing diagnostics on all electro-mechanical equipment operated by Nairobi water and Sewarege Company"
   },
   {
     src: slideImage6,
