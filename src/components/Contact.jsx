@@ -16,7 +16,7 @@ const Contact = () => {
       message,
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+    emailjs.send('service_efta50f', 'template_f25khwk', templateParams, 'dbN7V1sK2-GLDXndk')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Message sent successfully!');
@@ -99,8 +99,8 @@ const Contact = () => {
                   </div>
                   <div className="ml-6 grow">
                     <p className="mb-2 font-bold">Technical support</p>
-                    <p className="text-neutral-500">support@example.com</p>
-                    <p className="text-neutral-500">+1 234-567-89</p>
+                    <p className="text-neutral-500">ndiewo@ditech.co.ke</p>
+                    <p className="text-neutral-500"> +254(0)728 162 245,</p>
                   </div>
                 </div>
               </div>
@@ -115,8 +115,8 @@ const Contact = () => {
                   </div>
                   <div className="ml-6 grow">
                     <p className="mb-2 font-bold">Sales questions</p>
-                    <p className="text-neutral-500">sales@example.com</p>
-                    <p className="text-neutral-500">+1 234-567-89</p>
+                    <p className="text-neutral-500">ndiewo@ditech.co.ke</p>
+                    <p className="text-neutral-500"> +254(0)728 162 245</p>
                   </div>
                 </div>
               </div>
@@ -131,8 +131,8 @@ const Contact = () => {
                   </div>
                   <div className="ml-6 grow">
                     <p className="mb-2 font-bold">Press</p>
-                    <p className="text-neutral-500">press@example.com</p>
-                    <p className="text-neutral-500">+1 234-567-89</p>
+                    <p className="text-neutral-500">ndiewo@ditech.co.ke</p>
+                    <p className="text-neutral-500"> +254(0)728 162 245,</p>
                   </div>
                 </div>
               </div>
@@ -146,9 +146,9 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="ml-6 grow">
-                    <p className="mb-2 font-bold">Bug report</p>
-                    <p className="text-neutral-500">bugs@example.com</p>
-                    <p className="text-neutral-500">+1 234-567-89</p>
+                    <p className="mb-2 font-bold">Feedback</p>
+                    <p className="text-neutral-500">ndiewo@ditech.co.ke</p>
+                    <p className="text-neutral-500"> +254(0)728 162 245,</p>
                   </div>
                 </div>
               </div>
