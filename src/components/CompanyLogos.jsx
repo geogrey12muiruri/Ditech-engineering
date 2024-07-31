@@ -51,7 +51,7 @@ const CompanyLogos = ({ className }) => {
               <div className={styles.icon}>{service.icon}</div>
               <h2 className={styles.serviceTitle}>{service.title}</h2>
               <p className={styles.description}>{service.description}</p>
-              <Link to={service.link} className={styles.link}>
+              <Link to={service.link} className={styles.link} style={{ zIndex: 10 }}>
                 Contact Us
               </Link>
             </div>
