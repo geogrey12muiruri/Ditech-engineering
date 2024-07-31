@@ -4,6 +4,7 @@ import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import { Link } from "react-router-dom";
 
 const Benefits = () => {
   return (
@@ -11,7 +12,7 @@ const Benefits = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Engineering the Future  with Ditech "
+          title="Engineering the Future with Ditech"
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
@@ -33,9 +34,13 @@ const Benefits = () => {
                     height={48}
                     alt={item.title}
                   />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                  <Link
+                    to="/projects"
+                    className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider z-10"
+                    style={{ pointerEvents: 'auto' }}
+                  >
                     Explore more
-                  </p>
+                  </Link>
                   <Arrow />
                 </div>
               </div>

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Carousel from './Carousel'
+import Carousel from './Carousel';
 import Location from './Location';
+
 // Sample data for projects
 const projectsData = [
   {
@@ -14,7 +15,6 @@ const projectsData = [
     description: '91 units comprising of 4, 3 and 2 bedroom Massionnets',
     category: 'Real Estate',
   },
-  
   {
     id: 2,
     title: 'Proposed Mini Appartments',
@@ -64,26 +64,24 @@ const projectsData = [
     description: 'Kisumu Long Term Action Plan Project',
     category: 'Environmental Monitoring System',
   },
-
   {
     id: 9,
-    title: "Nairobi Water Distribution Master Plan",
-    image: "https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835387/Nairobi_Master_Plan_misccs.jpg",
-    description: "Nairobi Water Distribution Master Plan",
-    category: "",
+    title: 'Nairobi Water Distribution Master Plan',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835387/Nairobi_Master_Plan_misccs.jpg',
+    description: 'Nairobi Water Distribution Master Plan',
+    category: '',
   },
-  // add 5 more projects for the construction category
-
   {
     id: 10,
-    title: "Proposed construction of Kitui County Headquarters ",
-    image: "https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835349/County_Assembly_of_Kitui1_xy1c5i.jpg",
-    description: "Proposed construction of Kitui County Headquarters ",
-    category: ""
-  }
+    title: 'Proposed construction of Kitui County Headquarters',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835349/County_Assembly_of_Kitui1_xy1c5i.jpg',
+    description: 'Proposed construction of Kitui County Headquarters',
+    category: '',
+  },
 ];
 
 const categories = [
+  'All',
   'Real Estate',
   'Consumer Electronics',
   'Home and Building',
@@ -93,14 +91,15 @@ const categories = [
 const Project = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const filteredProjects = (category) => {
-    let projects = projectsData;
-
-    if (category !== 'All') {
-      projects = projects.filter((project) => project.category === category);
+    if (category === 'All') {
+      return projectsData;
     }
-
-    return projects;
+    return projectsData.filter((project) => project.category === category);
   };
 
   return (
@@ -118,7 +117,7 @@ const Project = () => {
               >
                 <div className="border-2 border-gray-600 px-4 py-2 rounded-lg transform transition duration-500 hover:scale-110">
                   <h2 className="title-font font-medium text-xl text-gray-900">
-                    {projectsData.filter((project) => project.category === category).length}
+                    {category === 'All' ? projectsData.length : projectsData.filter((project) => project.category === category).length}
                   </h2>
                   <p className="leading-relaxed">{category}</p>
                 </div>
