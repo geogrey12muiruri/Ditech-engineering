@@ -36,7 +36,7 @@ const Benefits = () => {
                   />
                   <Link
                     to="/projects"
-                    className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider z-10"
+                    className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider z-50"
                     style={{ pointerEvents: 'auto' }}
                   >
                     Explore more

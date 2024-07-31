@@ -37,7 +37,7 @@ const Location = () => {
                                 </div>
                                 <div className="border-t border-gray-200 px-6 py-4">
                                     <h3 className="text-lg font-medium text-white">Contact</h3>
-                                    <p className="mt-1 text-white"><a href="https://ditechengineering.co.ke:2096">info@ditechengineering.co.ke</a></p>
+                                    
                                     <p className="mt-1 text-white">Telephone: +254 -20-3517066, +254(0)728 162 245, +254(0)735 162 245</p>
                                 </div>
                             </div>

@@ -1,4 +1,3 @@
-import { companyLogos } from "../constants";
 import { FaTools, FaProjectDiagram, FaWrench, FaIndustry } from "react-icons/fa";
 import { Link } from "react-router-dom"; // Assuming you're using React Router
 
@@ -39,9 +38,9 @@ const CompanyLogos = ({ className }) => {
     icon: "mb-4",
     serviceTitle: "text-xl font-semibold text-gray-800 mb-2",
     description: "text-gray-600 mb-4",
-    link: "mt-auto inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition",
+    link: "mt-auto w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition",
   };
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
