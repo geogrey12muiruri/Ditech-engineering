@@ -30,7 +30,7 @@ const services = [
 
 const CompanyLogos = ({ className }) => {
   const styles = {
-    container: "min-h-screen bg-gray-100 p-4 sm:p-8 z-10",
+    container: "min-h-screen bg-gray-100 p-4 mt-200 sm:p-8 z-10",
     wrapper: "max-w-5xl mx-auto",
     title: "text-3xl font-bold text-center text-gray-800 mb-8",
     grid: "grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
