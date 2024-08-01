@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <Section
-      className="relative z-5 overflow-hidden"
+      className="relative overflow-hidden"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
