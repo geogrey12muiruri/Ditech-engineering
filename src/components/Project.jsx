@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import Carousel from './Carousel';
 import Location from './Location';
 
@@ -148,7 +144,6 @@ const projectsData = [
     description: 'Proposed Kemri Welcome Trust Office refurbishment',
     category: '',
   },
-
 ];
 
 const categories = [
@@ -177,7 +172,7 @@ const Project = () => {
     <div className="container px-5 py-24 mx-auto">
       <Carousel />
       
-      <section className="text-gray-700 body-font">
+      <section className="text-white body-font">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex overflow-x-auto no-scrollbar space-x-4">
             {categories.map((category) => (
@@ -187,10 +182,10 @@ const Project = () => {
                 onClick={() => setSelectedCategory(category)}
               >
                 <div className="border-2 border-gray-600 px-4 py-2 rounded-lg transform transition duration-500 hover:scale-110">
-                  <h2 className="title-font font-medium text-xl text-gray-900">
+                  <h2 className="title-font font-medium text-xl text-white">
                     {category === 'All' ? projectsData.length : projectsData.filter((project) => project.category === category).length}
                   </h2>
-                  <p className="leading-relaxed">{category}</p>
+                  <p className="leading-relaxed text-white">{category}</p>
                 </div>
               </div>
             ))}
@@ -198,37 +193,27 @@ const Project = () => {
         </div>
       </section>
 
-      <h2 className="text-2xl font-bold mb-4">{selectedCategory} Projects</h2>
-      <Swiper
-        modules={[Navigation]}
-        spaceBetween={20}
-        slidesPerView={1}
-        navigation
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-        }}
-      >
-        {filteredProjects(selectedCategory).map((project) => (
-          <SwiperSlide key={project.id}>
-            <div className="p-4 bg-white rounded-lg shadow-lg">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-50 object-cover mb-4 rounded"
-              />
-              <p className="text-gray-600">{project.description}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <section className="text-white body-font">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredProjects(selectedCategory).map((project) => (
+              <div key={project.id} className="p-4">
+                <div className="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                  <img
+                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    src={project.image}
+                    alt={project.title}
+                  />
+                  <div className="p-6">
+                    <h2 className="text-lg text-white font-medium title-font mb-4">{project.title}</h2>
+                    <p className="leading-relaxed text-white">{project.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <Location />
     </div>
