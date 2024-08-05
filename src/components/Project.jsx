@@ -78,6 +78,77 @@ const projectsData = [
     description: 'Proposed construction of Kitui County Headquarters',
     category: '',
   },
+  {
+    id: 11,
+    title: 'Lungalunga, Msambweni, Kwale and Ukunda Water Supply',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835365/Kwale_Water_Supply_1_cvdlun.jpg',
+    description: 'Lungalunga, Msambweni, Kwale and Ukunda Water Supply',
+    category: '',
+  },
+  {
+    id: 12,
+    title: 'ElectroMechanical and Dam instrumentation of Umaa Dam project in Kitui',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722861623/umaa_v4k8hc.jpg',
+    description: 'ElectroMechanical and Dam instrumentation of Umaa Dam project in Kitui',
+    category: '',
+  },
+  {
+    id: 13,
+    title: 'Drilling and construction of 3 High-capacity boreholes in Baricho',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722861623/baricho_zd63om.jpg',
+    description: 'Drilling and construction of 3 High-capacity boreholes in Baricho',
+    category: '',
+  },
+  {
+    id: 14,
+    title: 'Construction and Technical support of water and Sewerage Authority in Lesotho',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835374/robot_jkhffy.jpg',
+    description: 'Construction and Technical support of water and Sewerage Authority in Lesotho',
+    category: '',
+  },
+  {
+    id: 15,
+    title: 'Cape de Galdo Water Supply project in Mozambique',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835373/Morogoro_water_3_hpw0uo.jpg',
+    description: 'Cape de Galdo Water Supply project in Mozambique',
+    category: '',
+  },
+  {
+    id: 16,
+    title: 'Morogoro Water Supply project in Tanzania',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835369/Morogoro_water_2_q7siyb.jpg',
+    description: 'Morogoro Water Supply project in Tanzania',
+    category: '',
+  },
+  {
+    id: 17,
+    title: 'Rehabilitation of the National Institute of Statistics Rwanda, Kigali Office Blocks at Muhima',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722863887/nis_nribtc.jpg',
+    description: 'Rehabilitation of the National Institute of Statistics Rwanda, Kigali Office Blocks at Muhima',
+    category: '',
+  },
+  {
+    id: 18,
+    title: 'Proposed office block Ministry of Justice, Somaliland',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835380/Somaliland_-new_Ministry_of_Justice_22Jan2014_ata3oh.jpg',
+    description: 'Proposed office block Ministry of Justice, Somaliland',
+    category: '',
+  },
+  {
+    id: 19,
+    title: 'Rehabilitation of Kenyatta National Hospital Prime care center 9th and 10th floor',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835358/KNH_Prime_Care_Center_1_rmrdlx.jpg',
+    description: 'Rehabilitation of Kenyatta National Hospital Prime care center 9th and 10th floor',
+    category: '',
+  },
+  {
+    id: 20,
+    title: 'Proposed Kemri Welcome Trust Office refurbishment',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835358/KNH_Prime_Care_Center_1_rmrdlx.jpg',
+    description: 'Proposed Kemri Welcome Trust Office refurbishment',
+    category: '',
+  },
+
 ];
 
 const categories = [
