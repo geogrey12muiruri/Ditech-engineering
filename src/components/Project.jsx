@@ -141,7 +141,7 @@ const projectsData = [
   {
     id: 20,
     title: 'Proposed Kemri Welcome Trust Office refurbishment',
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835358/KNH_Prime_Care_Center_1_rmrdlx.jpg',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835348/Kemri_Welcome_Trust_ap29ex.jpg',
     description: 'Office refurbishment for Kemri Welcome Trust.',
     category: 'Healthcare',
   },
@@ -159,27 +159,9 @@ const projectsData = [
     description: 'Rehabilitation and upgrade of the fire alarm system at Laico Regency Hotel.',
     category: 'Hospitality',
   },
-  {
-    id: 23,
-    title: 'Norwegian People’s Aid Development Plan for Four Refugee Camps in Ethiopia',
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722872087/ethiopia_j4yi9i.jpg',
-    description: 'Development plan for four refugee camps in Ethiopia.',
-    category: 'Public Infrastructure',
-  },
-  {
-    id: 24,
-    title: 'Electrical Audit for East African Breweries Ltd in Kenya, Uganda and Tanzania',
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722872290/east_africa_yiqhdc.jpg',
-    description: 'Electrical audit for East African Breweries Ltd across Kenya, Uganda, and Tanzania.',
-    category: 'Industrial',
-  },
-  {
-    id: 25,
-    title: 'Simu Ya Jamii Project',
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722872290/east_africa_yiqhdc.jpg',
-    description: 'Telecommunications infrastructure project for community phone services.',
-    category: 'Telecommunications',
-  }
+
+
+
 ];
 
 
