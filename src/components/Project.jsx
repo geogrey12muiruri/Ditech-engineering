@@ -55,7 +55,7 @@ const projectsData = [
   },
   {
     id: 8,
-    title: 'Project H',
+    title: 'Kisumu Long Term Action Plan Project',
     image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835357/Kisumu_long_term_action_plan_dzqkci.jpg',
     description: 'Kisumu Long Term Action Plan Project',
     category: 'Environmental Monitoring System',
