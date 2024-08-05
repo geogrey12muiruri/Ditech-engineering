@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Carousel from './Carousel';
 import Location from './Location';
 
@@ -160,92 +162,78 @@ const projectsData = [
   },
   {
     id: 23,
-    title: 'Relocation of Gulf African Bank Head Office', 
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835349/geminia_fbkgnw.jpg',
-    description: 'Relocation of Gulf African Bank Head Office',
+    title: 'Norwegian People’s Aid Development Plan for Four Refugee Camps in Ethiopia',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722872087/ethiopia_j4yi9i.jpg',
+    description: 'Norwegian People’s Aid Development Plan for Four Refugee Camps in Ethiopia',
     category: '',
   },
   {
     id: 24,
-    title: 'Acres Apartments Kilimani',  
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835349/First-Riverside-Acres-Duplex-1_psj3vw.jpg',
-    description: 'Acres Apartments Kilimani',
+    title: 'Electrical Audit for East African Breweries Ltd in Kenya, Uganda and Tanzania',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722872290/east_africa_yiqhdc.jpg',
+    description: 'Electrical Audit for East African Breweries Ltd in Kenya, Uganda and Tanzania',
     category: '',
   },
+  {
+    id: 25,
+    title: 'Simu Ya Jamii Project',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722872290/east_africa_yiqhdc.jpg',
+    description: 'Simu Ya Jamii Project',
+    category: '',
+  }
 ];
 
-const categories = [
-  'All',
-  'Real Estate',
-  'Consumer Electronics',
-  'Home and Building',
-  'Environmental Monitoring System',
-];
-
-const Project = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('');
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Fetching the projects data from the server or any other source
+    setProjects(projectsData);
+    AOS.init({ duration: 1000 });
   }, []);
 
-  const filteredProjects = (category) => {
-    if (category === 'All') {
-      return projectsData;
-    }
-    return projectsData.filter((project) => project.category === category);
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
   };
 
+  const filteredProjects = selectedCategory
+    ? projects.filter((project) => project.category === selectedCategory)
+    : projects;
+
   return (
-    <div className="container px-5 py-24 mx-auto">
-      <Carousel />
-      
-      <section className="text-white body-font">
-        <div className="container px-5 py-12 mx-auto">
-          <div className="flex overflow-x-auto no-scrollbar space-x-4">
-            {categories.map((category) => (
-              <div
-                key={category}
-                className="flex-none cursor-pointer"
-                onClick={() => setSelectedCategory(category)}
-              >
-                <div className="border-2 border-gray-600 px-4 py-2 rounded-lg transform transition duration-500 hover:scale-110">
-                  <h2 className="title-font font-medium text-xl text-white">
-                    {category === 'All' ? projectsData.length : projectsData.filter((project) => project.category === category).length}
-                  </h2>
-                  <p className="leading-relaxed text-white">{category}</p>
-                </div>
-              </div>
-            ))}
+    <div className="flex flex-col items-center p-4 md:p-8 lg:p-16 bg-white">
+      <h1 className="text-3xl font-bold mb-8">Our Projects</h1>
+      <div className="flex flex-wrap justify-center gap-4 mb-8">
+        {['Real Estate', 'Construction', 'Home and Building', 'Consumer Electronics', 'Environmental Monitoring System'].map((category) => (
+          <button
+            key={category}
+            className={`px-4 py-2 rounded-lg border ${selectedCategory === category ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
+            onClick={() => handleCategoryChange(category)}
+          >
+            {category}
+          </button>
+        ))}
+        <button
+          className={`px-4 py-2 rounded-lg border ${selectedCategory === '' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}
+          onClick={() => handleCategoryChange('')}
+        >
+          All
+        </button>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {filteredProjects.map((project) => (
+          <div key={project.id} data-aos="fade-up" className="bg-white rounded-lg shadow-md p-4">
+            <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-t-lg" />
+            <div className="p-4">
+              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+              <p className="text-gray-700">{project.description}</p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="text-white body-font">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredProjects(selectedCategory).map((project) => (
-              <div key={project.id} className="p-4">
-                <div className="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
-                  <img
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src={project.image}
-                    alt={project.title}
-                  />
-                  <div className="p-6">
-                    <h2 className="text-lg text-white font-medium title-font mb-4">{project.title}</h2>
-                    {/* <p className="leading-relaxed text-white">{project.description}</p> */}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <Location />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default Project;
+export default Projects;
