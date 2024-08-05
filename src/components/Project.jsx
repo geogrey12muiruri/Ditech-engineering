@@ -144,6 +144,34 @@ const projectsData = [
     description: 'Proposed Kemri Welcome Trust Office refurbishment',
     category: '',
   },
+  {
+    id: 21,
+    title: 'Proposed construction of kitui county Headquarters',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835358/kitui-pic_l3re6i.jpg',
+    description: 'Proposed construction of kitui county Headquarters',
+    category: '',
+  },
+  {
+    id: 22,
+    title: 'Laico Regency Hotel Fire alarm system rehabilitation and upgrade',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1722870957/laico_morbqh.jpg',
+    description: 'Laico Regency Hotel Fire alarm system rehabilitation and upgrade',
+    category: '',
+  },
+  {
+    id: 23,
+    title: 'Relocation of Gulf African Bank Head Office', 
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835349/geminia_fbkgnw.jpg',
+    description: 'Relocation of Gulf African Bank Head Office',
+    category: '',
+  },
+  {
+    id: 24,
+    title: 'Acres Apartments Kilimani',  
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835349/First-Riverside-Acres-Duplex-1_psj3vw.jpg',
+    description: 'Acres Apartments Kilimani',
+    category: '',
+  },
 ];
 
 const categories = [
