@@ -199,7 +199,7 @@ const Projects = () => {
 
   const filteredProjects = selectedCategory
     ? projects.filter((project) => project.category === selectedCategory)
-    : projects;
+    : projects; // Display all projects if no category is selected
 
   return (
     <div className="flex flex-col items-center p-4 md:p-8 lg:p-16 bg-white">
@@ -242,6 +242,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <Location />
     </div>
   );
 };

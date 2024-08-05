@@ -3,7 +3,7 @@ import React from 'react';
 const Location = () => {
     return (
         <section>
-            <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+            <div className="max-w-7xl mx-auto bg-slate-950 py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-extrabold text-white">Visit Our Location</h2>
                     <p className="mt-4 text-lg text-white">
