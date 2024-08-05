@@ -206,7 +206,7 @@ const Project = () => {
                   />
                   <div className="p-6">
                     <h2 className="text-lg text-white font-medium title-font mb-4">{project.title}</h2>
-                    <p className="leading-relaxed text-white">{project.description}</p>
+                    {/* <p className="leading-relaxed text-white">{project.description}</p> */}
                   </div>
                 </div>
               </div>
