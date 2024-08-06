@@ -42,18 +42,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: 'Putland Prison',
+    title: 'Puntland Prison',
     image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835372/Putland_Prison_haqu8d.jpg',
     description: 'Construction and infrastructure development for Putland Prison.',
     category: 'Public Infrastructure',
   },
-  {
-    id: 7,
-    title: 'Mulago Referral Hospital',
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1721835366/Mulago-referral-hospital_acj6fk.jpg',
-    description: 'Comprehensive design and construction for Mulago Referral Hospital.',
-    category: 'Healthcare',
-  },
+  
   {
     id: 8,
     title: 'Kisumu Long Term Action Plan Project',
