@@ -14,6 +14,7 @@ import Project from "./components/Project";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import CompanyLogos from "./components/CompanyLogos";
 
 const Layout = ({ children }) => (
   <>
@@ -29,7 +30,7 @@ const Layout = ({ children }) => (
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout><Hero /><Benefits /><Collaboration /><Services /><Location /></Layout>} />
+      <Route path="/" element={<Layout><Hero /><Benefits /><CompanyLogos /><Collaboration /><Services /><Location /></Layout>} />
       <Route path="/projects" element={<Layout><Project /></Layout>} /> {/* New route for /projects */}
       <Route path="/teams" element={<Layout><Team /></Layout>} /> {/* New route for /projects */}
       <Route path="/contact" element={<Layout><Contact /></Layout>} /> {/* New route for /projects */}

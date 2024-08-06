@@ -1,64 +1,87 @@
-import { FaTools, FaProjectDiagram, FaWrench, FaIndustry } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Assuming you're using React Router
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { services, companyLogos } from "../constants";
+import Heading from "./Heading";
+import Section from "./Section";
+import Arrow from "../assets/svg/Arrow";
+import { GradientLight } from "./design/Benefits";
+import ClipPath from "../assets/svg/ClipPath";
+import { Link } from "react-router-dom";
 
-const services = [
-  {
-    title: "Installation Services",
-    description: "High-quality installation services for all electromechanical needs.",
-    icon: <FaTools className="text-4xl text-blue-500" />,
-    link: "/contact",
-  },
-  {
-    title: "Project Management",
-    description: "Efficient management of all electromechanical projects.",
-    icon: <FaProjectDiagram className="text-4xl text-green-500" />,
-    link: "/contact",
-  },
-  {
-    title: "Maintenance Services",
-    description: "Comprehensive maintenance services to ensure longevity and reliability.",
-    icon: <FaWrench className="text-4xl text-yellow-500" />,
-    link: "/contact",
-  },
-  {
-    title: "Industrial Solutions",
-    description: "Tailored solutions for industrial electromechanical requirements.",
-    icon: <FaIndustry className="text-4xl text-red-500" />,
-    link: "/contact",
-  },
-];
-
-const CompanyLogos = ({ className }) => {
-  const styles = {
-    container: "min-h-screen bg-gray-100 p-4 mt-200 sm:p-8 z-10",
-    wrapper: "max-w-5xl mx-auto",
-    title: "text-3xl font-bold text-center text-gray-800 mb-8",
-    grid: "grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
-    card: "bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center",
-    icon: "mb-4",
-    serviceTitle: "text-xl font-semibold text-gray-800 mb-2",
-    description: "text-gray-600 mb-4",
-    link: "mt-auto w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition",
-  };
+const CompanyLogos = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <h1 className={styles.title}>Our Services</h1>
-        <div className={styles.grid}>
-          {services.map((service, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.icon}>{service.icon}</div>
-              <h2 className={styles.serviceTitle}>{service.title}</h2>
-              <p className={styles.description}>{service.description}</p>
-              <Link to={service.link} className={styles.link} style={{ zIndex: 10 }}>
-                Contact Us
-              </Link>
+    <Section id="features">
+      <div className="container relative z-2">
+        <Heading
+          className="md:max-w-md lg:max-w-2xl"
+          title="We Deliver"
+        />
+
+        <div className="flex flex-wrap gap-10 mb-10">
+          {services.map((item) => (
+            <div
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              style={{
+                backgroundImage: `url(${item.backgroundUrl})`,
+              }}
+              key={item.id}
+              data-aos="fade-up"
+            >
+              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+                <h5 className="h5 mb-5  text-orange-500">{item.title}</h5>
+                <p className="body-2 mb-6 text-n-3">{item.text}</p>
+                <div className="flex items-center mt-auto">
+                  <img
+                    src={item.iconUrl}
+                    width={48}
+                    height={48}
+                    alt={item.title}
+                  />
+                  <Link
+                    to="/projects"
+                    className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider z-50"
+                    style={{ pointerEvents: 'auto' }}
+                  >
+                    Explore more
+                  </Link>
+                  <Arrow />
+                </div>
+              </div>
+
+              {item.light && <GradientLight />}
+
+              <div
+                className="absolute inset-0.5 bg-n-8"
+                style={{ clipPath: "url(#benefits)" }}
+              >
+                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
+                  {item.imageUrl && (
+                    <img
+                      src={item.imageUrl}
+                      width={380}
+                      height={362}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
+              </div>
+
+              <ClipPath />
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 

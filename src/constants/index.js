@@ -288,7 +288,58 @@ export const benefits = [
     imageUrl: benefitImage2,
   },
 ];
-
+export const services = [
+  {
+    id: "0",
+    title: "Mechanical Engineering",
+    text: "Providing innovative mechanical engineering solutions for a variety of industries, ensuring efficiency and reliability..",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "1",
+    title: "Electrical Engineering",
+    text: "Expertise in electrical systems design, installation, and maintenance to power your business operations.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "2",
+    title: "Renewable Energy Solutions",
+    text: "Sustainable and cost-effective renewable energy solutions including solar, wind, and geothermal systems.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "3",
+    title: "Project Management",
+    text: "Professional project management services to ensure timely and within-budget completion of your engineering projects.",
+    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    iconUrl: benefitIcon4,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "4",
+    title: "Consulting Services",
+    text: "Expert consulting services to guide you through complex engineering challenges and strategic planning.",
+    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "5",
+    title: "HVAC Systems",
+    text: "Design and installation of high-efficiency HVAC systems for optimal indoor climate control and energy savings.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+  },
+];
 export const socials = [
   {
     id: "0",

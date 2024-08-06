@@ -6,9 +6,9 @@ import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import { Link } from "react-router-dom";
 
-const Benefits = () => {
+const Services = () => {
   return (
-    <Section id="features">
+    <Section id="services">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
@@ -35,11 +35,11 @@ const Benefits = () => {
                     alt={item.title}
                   />
                   <Link
-                    to="/projects"
+                    to="/contact"
                     className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider z-50"
                     style={{ pointerEvents: 'auto' }}
                   >
-                    Explore more
+                    Contact us
                   </Link>
                   <Arrow />
                 </div>
@@ -73,4 +73,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Services;
