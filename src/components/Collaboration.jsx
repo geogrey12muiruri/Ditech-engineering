@@ -9,9 +9,9 @@ const Collaboration = () => {
     <Section crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">
+          <h5 className="h5 mb-4 md:mb-8">
             Ditech Engineering  quality, safe, innovative, and flexible . 
-          </h2>
+          </h5>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (
