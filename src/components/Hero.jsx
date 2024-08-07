@@ -44,7 +44,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             At Ditech Engineering, our vision is to be the market leader in electromechanical services across the African region. With a commitment to total quality management, we provide high-quality installation and maintenance services, ensuring exceptional customer satisfaction.
           </p>
-          <Button href="/projects" white>
+          <Button href="/about" white>
             Learn More
           </Button>
         </div>
