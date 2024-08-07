@@ -354,7 +354,7 @@ const Projects = () => {
     <Carousel />
       <section className="bg-gray-100 py-8" id="projects">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6 text-center">Our Projects</h2>
+         
 
           {/* Projects with images */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
