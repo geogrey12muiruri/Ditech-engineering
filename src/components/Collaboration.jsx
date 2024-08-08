@@ -10,7 +10,7 @@ const Collaboration = () => {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h5 className="h5 mb-4 md:mb-8">
-            Ditech Engineering  quality, safe, innovative, and flexible . 
+            Ditech Engineering Limited. Quality, safe, innovative, and flexible . 
           </h5>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
