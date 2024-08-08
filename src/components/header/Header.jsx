@@ -6,6 +6,7 @@ import Button from "../Button";
 import MenuSvg from "../../assets/svg/MenuSvg";
 import { HamburgerMenu } from "../design/Header";
 import { useState } from "react";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   const pathname = useLocation();
@@ -36,8 +37,9 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <div>
-          <h1>Ditech Engineering</h1>
-       
+          <img src={logo} alt="Ditech Engineering Logo" className="h-12" />
+          <p>Ditech engineering Limited.</p>
+          <p className="text-xs font-light text-orange-500">Electro mechanical turn-key Engineers</p>
         </div>
 
         <nav

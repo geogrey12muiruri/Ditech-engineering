@@ -31,8 +31,8 @@ const Location = () => {
                                 </div>
                                 <div className="border-t border-gray-200 px-6 py-4">
                                     <h3 className="text-lg font-medium text-white">Hours</h3>
-                                    <p className="mt-1 text-white">Monday - Friday: 9am - 5pm</p>
-                                    <p className="mt-1 text-white">Saturday: 10am - 4pm</p>
+                                    <p className="mt-1 text-white">Monday - Friday: 8am - 5pm</p>
+                                    <p className="mt-1 text-white">Saturday: 8am - 1pm</p>
                                     <p className="mt-1 text-white">Sunday: Closed</p>
                                 </div>
                                 <div className="border-t border-gray-200 px-6 py-4">

@@ -80,12 +80,12 @@ const Carousel = () => {
               alt={image.alt}
             />
             <div
-              className={`absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 text-center transition-transform duration-1000 ease-in-out ${
+              className={`absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950 to-transparent flex flex-col justify-center items-center text-white p-4 text-center transition-transform duration-1000 ease-in-out ${
                 index === currentSlide ? 'transform translate-y-0' : 'transform translate-y-full'
               } delay-1000`}
             >
               <h2 className="text-2xl font-bold">{image.caption}</h2>
-              <p className="mt-2">{image.description}</p>
+              <p className="mt-2 text-sm">{image.description}</p>
             </div>
           </div>
         ))}
@@ -97,7 +97,7 @@ const Carousel = () => {
             key={index}
             type="button"
             className={`w-3 h-3 rounded-full ${
-              index === currentSlide ? 'bg-white' : 'bg-gray-400'
+              index === currentSlide ? 'bg-orange-500' : 'bg-gray-400'
             }`}
             aria-current={index === currentSlide}
             aria-label={`Slide ${index + 1}`}
@@ -111,9 +111,9 @@ const Carousel = () => {
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handlePrev}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-orange-500">
           <svg
-            className="w-4 h-4 text-white rtl:rotate-180"
+            className="w-4 h-4 text-orange-500 rtl:rotate-180"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -136,9 +136,9 @@ const Carousel = () => {
         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handleNext}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-orange-500">
           <svg
-            className="w-4 h-4 text-white rtl:rotate-180"
+            className="w-4 h-4 text-orange-500 rtl:rotate-180"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

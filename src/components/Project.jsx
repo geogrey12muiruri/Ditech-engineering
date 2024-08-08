@@ -310,38 +310,6 @@ const projectsData = [
     category: 'Healthcare',
     duration: '1993-1995',
   },
-  {
-    id: 41,
-    title: 'Mary Help of the sick Mission Hospital',
-   
-    description: 'electrical and mechanical engineering services for tender document preparation and supervison of the Mary Help of the Sick Mision Hospital',
-    category: 'Healthcare',
-    duration: '1993-1995',
-  },
-  {
-    id: 42,
-    title: 'Malaa Hospital for Selestian Sisters',
-   
-    description: 'electrical and mechanical engineering services for tender document preparation and supervison of the Malaa Hospital',
-    category: 'Healthcare',
-    duration: '1993-1995',
-  },
-  {
-    id: 43,
-    title: 'Quality meat packers limited',
-   
-    description: 'electrical and mechanical engineering services for tender document preparation design reviewand supervison ',
-    category: 'Healthcare',
-    duration: '1993-1995',
-  },
-  {
-    id: 44,
-    title: 'Proposed 108 Sapphire apartment in South B',
-   
-    description: 'electrical and mechanical detailed design , tender document preparations, drawings, BOQs specifications and cost estimates for electromechanical works, supervision and  commisioning of electrical lighting and power systems.  and engineering services for tender document preparation design reviewand supervison ',
-    category: 'Healthcare',
-    duration: '1993-1995',
-  },
 ];
 
 const shuffleArray = (array) => {

@@ -12,10 +12,10 @@ const About = () => {
                     About Us
                 </span>
                 <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                    Ditech Engineering
+                Ditech Engineering Ltd.
                 </h2>
                 <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-                    Ditech Engineering is East Africa's premier provider of Electrical-Mechanical and Turnkey consultancy services. Headquartered on the 5th Floor of Nextgen Building, Mombasa Road, next to EKA Hotel in Nairobi, Kenya, we offer a comprehensive range of electrical-mechanical contracting and consultancy services to industrial, commercial, and institutional clients across the continent.
+                    Ditech Engineering Ltd. is East Africa's premier provider of Electrical-Mechanical and Turnkey consultancy services. Headquartered on the 5th Floor of Nextgen Building, Mombasa Road, next to EKA Hotel in Nairobi, Kenya, we offer a comprehensive range of electrical-mechanical contracting and consultancy services to industrial, commercial, and institutional clients across the continent.
                 </p>
             </div>
 
