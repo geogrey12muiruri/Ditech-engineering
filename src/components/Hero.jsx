@@ -22,14 +22,14 @@ const Hero = () => {
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
-        {/* Carousel component positioned in the background */}
+        /* Carousel component positioned in the background */
         <div className="absolute inset-0 z-0">
           <HeroCarousel />
         </div>
 
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h4 className="h5 mb-6">
-            Welcome to Ditech Engineering&nbsp;
+            Welcome to Ditech Engineering Limited&nbsp;
             <span className="inline-block relative">
               A Leading Electromechanical Consultants{" "}
               <img
@@ -42,7 +42,7 @@ const Hero = () => {
             </span>
           </h4>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            At Ditech Engineering, our vision is to be the market leader in electromechanical services across the African region. With a commitment to total quality management, we provide high-quality installation and maintenance services, ensuring exceptional customer satisfaction.
+            At Ditech Engineering Limited., our vision is to be the market leader in electromechanical services across the African region. With a commitment to total quality management, we provide high-quality installation and maintenance services, ensuring exceptional customer satisfaction.
           </p>
           <Button href="/about" white>
             Learn More

@@ -36,11 +36,12 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <div>
-          <img src={logo} alt="Ditech Engineering Logo" className="h-12" />
-          <p>Ditech engineering Limited.</p>
-          <p className="text-xs font-light text-orange-500">Electro mechanical turn-key Engineers</p>
-        </div>
+      <div className="flex flex-col items-center p-4">
+  <img src={logo} alt="Ditech Engineering Logo" className="h-10 md:h-12" />
+  <p className="text-sm md:text-base mt-2">Ditech Engineering Limited.</p>
+  <p className="text-xs font-light text-orange-500 mt-1">Electro-mechanical turn-key Engineers</p>
+</div>
+
 
         <nav
           className={`${
