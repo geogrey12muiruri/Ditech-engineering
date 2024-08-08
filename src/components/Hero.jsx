@@ -28,8 +28,8 @@ const Hero = () => {
         </div>
 
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h4 className="h5 mb-6">
-            Welcome to Ditech Engineering Limited&nbsp;
+          <h5 className="h5 mb-6 mt-20">
+           
             <span className="inline-block relative">
               A Leading Electromechanical Consultants{" "}
               <img
@@ -40,7 +40,7 @@ const Hero = () => {
                 alt="Curve"
               />
             </span>
-          </h4>
+          </h5>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             At Ditech Engineering Limited., our vision is to be the market leader in electromechanical services across the African region. With a commitment to total quality management, we provide high-quality installation and maintenance services, ensuring exceptional customer satisfaction.
           </p>
