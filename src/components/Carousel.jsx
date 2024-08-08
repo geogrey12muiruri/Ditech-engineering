@@ -80,7 +80,7 @@ const Carousel = () => {
               alt={image.alt}
             />
             <div
-              className={`absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950 to-transparent flex flex-col justify-center items-center text-white p-4 text-center transition-transform duration-1000 ease-in-out ${
+              className={`absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950 to-transparent flex flex-col justify-center items-center text-white p-4 text-center transition-transform mt-20 duration-1000 ease-in-out ${
                 index === currentSlide ? 'transform translate-y-0' : 'transform translate-y-full'
               } delay-1000`}
             >
