@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
     <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
       <Header />
       {children}
-      <Footer /> Uncomment if you want the Footer to be part of the Layout
+      <Footer />
     </div>
     <ButtonGradient />
   </>
