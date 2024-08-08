@@ -84,7 +84,7 @@ const Carousel = () => {
                 index === currentSlide ? 'transform translate-y-0' : 'transform translate-y-full'
               } delay-1000`}
             >
-              <h2 className="text-2xl font-bold">{image.caption}</h2>
+              <h2 className="text-md">{image.caption}</h2>
               <p className="mt-2 text-sm">{image.description}</p>
             </div>
           </div>
