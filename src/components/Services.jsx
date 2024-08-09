@@ -7,6 +7,38 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const projects = [
   {
+    
+    title: 'Dandora Estate Sewarage Treatment Plant',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/dandoraestate_ddaext.jpg',
+    description: 'Consultancy service for detailed design and construction, supervision for rehabilitation and expansion of Dandora Estate Sewarage Treatment Plant.',
+    category: 'Real Estate',
+    duration: '2021-2023',
+  },
+  {
+    
+    title: 'Water Supply and sanitations improvement project in Zambia (Mongu, Senanga, Seshekhe, Kaoma)',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/watersupplyzambia_m3g9op.jpg',
+    description: 'Design review and supervision of the water supply project',
+    category: 'Educational Infrastructure',
+    duration: '1994-1996',
+  },
+  {
+    
+    title: 'Uguja/Sega/Ukwala Water Supply and Sanitation Project',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/unguja_oxgase.jpg',
+    description: 'Electrical and Mechanical Engineers for design review of detailed design report, study, supervision and commisioning of Ugunja/Sega/Ukwala water supply and sanitation Project. Design for the Pump station  ',
+    category: 'Real Estate',
+    duration: '2021-2023',
+  },
+  {
+   
+    title: 'Water supply system in Juba city',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/watersupplyjuba_kn7msz.jpg',
+    description: 'consulting services in electro mechanical design for recirculation pumping system and pipeline design calculations ',
+    category: 'Healthcare',
+    duration: '1993-1995',
+  },
+  {
     image: project1Image,
     title: 'Proposed construction of Kitui County Headquarters',
     description: 'Preparation of Designs, Supervision and Commissioning of Construction of Kitui County Assembly & Offices plumbing, drainage, Firefighting Facilities and air conditioning with a total built up area of 4,500 SM.',

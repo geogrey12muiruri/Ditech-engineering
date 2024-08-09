@@ -32,6 +32,22 @@ const images = [
     description: "35000Ltrs per hour activated Alumna water Treatment Plant Installation"
   },
   {
+    src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/dandoraestate_ddaext.jpg',
+    alt: 'Dandora Estate Sewarage Treatment Plant',  
+    caption: 'Dandora Estate Sewarage Treatment Plant',    
+    description: 'Consultancy service for detailed design and construction, supervision for rehabilitation and expansion of Dandora Estate Sewarage Treatment Plant.',
+    category: 'Real Estate',
+    duration: '2021-2023',
+  },
+  {
+    src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/unguja_oxgase.jpg',
+    alt: 'Uguja/Sega/Ukwala Water Supply and Sanitation Project',
+    caption: 'Uguja/Sega/Ukwala Water Supply and Sanitation Project',   
+    description: 'Electrical and Mechanical Engineers for design review of detailed design report, study, supervision and commisioning of Ugunja/Sega/Ukwala water supply and sanitation Project. Design for the Pump station  ',
+    category: 'Real Estate',
+    duration: '2021-2023',
+  },
+  {
     src: slideImage5,
     alt: "Image 5",
     caption: "Nairobi water Distribution Master Plan",
@@ -80,7 +96,7 @@ const Carousel = () => {
               alt={image.alt}
             />
             <div
-              className={`absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950 to-transparent flex flex-col justify-center items-center text-white p-4 text-center transition-transform mt-20 duration-1000 ease-in-out ${
+              className={`absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-transparent flex flex-col justify-center items-center text-white p-4 text-center transition-transform mt-20 duration-1000 ease-in-out ${
                 index === currentSlide ? 'transform translate-y-0' : 'transform translate-y-full'
               } delay-1000`}
             >
@@ -90,7 +106,7 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-
+  
       <div className="absolute z-30 flex space-x-3 bottom-5 left-1/2 transform -translate-x-1/2">
         {images.map((_, index) => (
           <button
@@ -105,7 +121,7 @@ const Carousel = () => {
           ></button>
         ))}
       </div>
-
+  
       <button
         type="button"
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -130,7 +146,7 @@ const Carousel = () => {
           <span className="sr-only">Previous</span>
         </span>
       </button>
-
+  
       <button
         type="button"
         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"

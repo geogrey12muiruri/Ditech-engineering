@@ -101,6 +101,8 @@ const Contact = () => {
                     <p className="mb-2 font-bold">Technical support</p>
                     <p className="text-neutral-500">ndiewo@ditech.co.ke</p>
                     <p className="text-neutral-500"> +254(0)728 162 245,</p>
+                    <p className="text-neutral-500">supervision@ditech.co.ke</p>
+                    <p className="text-neutral-500">mechanical@ditech.co.ke</p>
                   </div>
                 </div>
               </div>
@@ -116,7 +118,9 @@ const Contact = () => {
                   <div className="ml-6 grow">
                     <p className="mb-2 font-bold">Sales questions</p>
                     <p className="text-neutral-500">ndiewo@ditech.co.ke</p>
+                    <p className="text-neutral-500">info@ditech.co.ke</p>
                     <p className="text-neutral-500"> +254(0)728 162 245</p>
+                    <p className="text-neutral-500"> +254(0)733 950</p>
                   </div>
                 </div>
               </div>
@@ -149,6 +153,8 @@ const Contact = () => {
                     <p className="mb-2 font-bold">Feedback</p>
                     <p className="text-neutral-500">ndiewo@ditech.co.ke</p>
                     <p className="text-neutral-500"> +254(0)728 162 245,</p>
+                    <p className="text-neutral-500"> info@ditech.co.ke</p>
+                    <p className="text-neutral-500"> +254(0)733 950</p>
                   </div>
                 </div>
               </div>

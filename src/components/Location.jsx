@@ -39,6 +39,7 @@ const Location = () => {
                                     <h3 className="text-lg font-medium text-white">Contact</h3>
                                     
                                     <p className="mt-1 text-white">Telephone: +254 -20-3517066, +254(0)728 162 245, +254(0)735 162 245</p>
+                                    <p classsName="mt-1 text-white">Email:ndiewo@ditech.co.ke </p>
                                 </div>
                             </div>
                         </div>

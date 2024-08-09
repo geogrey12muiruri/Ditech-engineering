@@ -257,7 +257,7 @@ export const benefits = [
   {
     id: "2",
     title: "Comprehensive Solutions",
-    text: "Delivering an extensive array of services, from system installation to ongoing maintenance, guaranteeing full-spectrum support in electro-mechanical engineering.",
+    text: "Delivering a comprehensive range of services, from design and system installation to ongoing maintenance, ensuring full-spectrum support in electro-mechanical engineering.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
