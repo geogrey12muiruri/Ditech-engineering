@@ -48,6 +48,15 @@ const images = [
     duration: '2021-2023',
   },
   {
+    src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387772/kituiwatersupply_dqgr4t.jpg',
+    alt: 'Kitui Water Supply',
+    caption: 'Kitui Water Supply',
+    
+    description: 'Design Review and and preparation of tender documentation , tender action and supervision for Kitui water and sewerage project',
+    category: 'Healthcare',
+    duration: '1993-1995',
+  },
+  {
     src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387814/thikagithunguri_ol15da.jpg',
     alt: 'Thika Githunguri Water and sanitation project',
     caption: 'Thika Githunguri Water and sanitation project',

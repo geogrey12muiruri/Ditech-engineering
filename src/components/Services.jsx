@@ -16,6 +16,14 @@ const projects = [
   },
   {
     
+    title: 'Kitui Water Supply',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387772/kituiwatersupply_dqgr4t.jpg',
+    description: 'Design Review and and preparation of tender documentation , tender action and supervision for Kitui water and sewerage project',
+    category: 'Healthcare',
+    duration: '1993-1995',
+  },
+  {
+    
     title: 'Thika Githunguri Water and sanitation project',
     image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387814/thikagithunguri_ol15da.jpg',
     description: 'Consulting services in electromechanical design, project overview report and design report and preparation of tender documents',
