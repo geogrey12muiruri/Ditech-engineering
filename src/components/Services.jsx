@@ -15,6 +15,14 @@ const projects = [
     duration: '2021-2023',
   },
   {
+ 
+    title: 'Sychelles Water and Energy Assets Management Project' ,
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387815/sychelles_fgeobs.jpg',
+    description:'Technical assistance for Sychelles Public utilities corporation.',
+    category: 'Real Estate',
+    duration: '2021-2023',
+  },
+  {
     
     title: 'Water Supply and sanitations improvement project in Zambia (Mongu, Senanga, Seshekhe, Kaoma)',
     image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/watersupplyzambia_m3g9op.jpg',

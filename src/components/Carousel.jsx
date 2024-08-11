@@ -48,6 +48,15 @@ const images = [
     duration: '2021-2023',
   },
   {
+    src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387815/sychelles_fgeobs.jpg',
+    alt: 'Sychelles Water and Energy Assets Management Project',
+    caption: 'Sychelles Water and Energy Assets Management Project' ,
+    
+    description:'Technical assistance for Sychelles Public utilities corporation.',
+    category: 'Real Estate',
+    duration: '2021-2023',
+  },
+  {
     src: slideImage5,
     alt: "Image 5",
     caption: "Nairobi water Distribution Master Plan",
