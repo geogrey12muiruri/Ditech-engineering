@@ -284,6 +284,7 @@ const projectsData = [
   {
     id: 34,
     title: 'Kitui Water Supply',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387772/kituiwatersupply_dqgr4t.jpg',
     description: 'Design Review and and preparation of tender documentation , tender action and supervision for Kitui water and sewerage project',
     category: 'Healthcare',
     duration: '1993-1995',
@@ -300,6 +301,7 @@ const projectsData = [
   {
     id: 37,
     title: 'Thika Githunguri Water and sanitation project',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387814/thikagithunguri_ol15da.jpg',
     description: 'Consulting services in electromechanical design, project overview report and design report and preparation of tender documents',
     category: 'Healthcare',
     duration: '1993-1995',
@@ -316,7 +318,7 @@ const projectsData = [
   {
     id: 39,
     title: 'Water supply system in Juba city',
-    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/watersupplyjuba_kn7msz.jpg',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387770/jubawatersupply_tzqvzi.jpg',
     description: 'consulting services in electro mechanical design for recirculation pumping system and pipeline design calculations ',
     category: 'Healthcare',
     duration: '1993-1995',
@@ -344,6 +346,14 @@ const projectsData = [
     title: 'Uguja/Sega/Ukwala Water Supply and Sanitation Project',
     image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723198275/unguja_oxgase.jpg',
     description: 'Electrical and Mechanical Engineers for design review of detailed design report, study, supervision and commisioning of Ugunja/Sega/Ukwala water supply and sanitation Project. Design for the Pump station  ',
+    category: 'Real Estate',
+    duration: '2021-2023',
+  },
+  {
+    id: 43,
+    title: 'Sychelles Water and Energy Assets Management Project' ,
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387815/sychelles_fgeobs.jpg',
+    description:'Technical assistance for Sychelles Public utilities corporation.',
     category: 'Real Estate',
     duration: '2021-2023',
   },
