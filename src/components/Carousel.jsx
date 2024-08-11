@@ -48,6 +48,15 @@ const images = [
     duration: '2021-2023',
   },
   {
+    src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387814/thikagithunguri_ol15da.jpg',
+    alt: 'Thika Githunguri Water and sanitation project',
+    caption: 'Thika Githunguri Water and sanitation project',
+    
+    description: 'Consulting services in electromechanical design, project overview report and design report and preparation of tender documents',
+    category: 'Healthcare',
+    duration: '1993-1995',
+  },
+  {
     src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387815/sychelles_fgeobs.jpg',
     alt: 'Sychelles Water and Energy Assets Management Project',
     caption: 'Sychelles Water and Energy Assets Management Project' ,

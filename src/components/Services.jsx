@@ -15,6 +15,14 @@ const projects = [
     duration: '2021-2023',
   },
   {
+    
+    title: 'Thika Githunguri Water and sanitation project',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387814/thikagithunguri_ol15da.jpg',
+    description: 'Consulting services in electromechanical design, project overview report and design report and preparation of tender documents',
+    category: 'Healthcare',
+    duration: '1993-1995',
+  },
+  {
  
     title: 'Sychelles Water and Energy Assets Management Project' ,
     image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387815/sychelles_fgeobs.jpg',
