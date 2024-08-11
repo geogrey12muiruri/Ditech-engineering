@@ -16,6 +16,15 @@ const projects = [
   },
   {
     
+    title: 'Water supply system in Juba city',
+    image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387770/jubawatersupply_tzqvzi.jpg',
+    description: 'consulting services in electro mechanical design for recirculation pumping system and pipeline design calculations ',
+    category: 'Healthcare',
+    duration: '1993-1995',
+  },
+
+  {
+    
     title: 'Kitui Water Supply',
     image: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387772/kituiwatersupply_dqgr4t.jpg',
     description: 'Design Review and and preparation of tender documentation , tender action and supervision for Kitui water and sewerage project',
