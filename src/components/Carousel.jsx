@@ -48,6 +48,15 @@ const images = [
     duration: '2021-2023',
   },
   {
+    src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387770/jubawatersupply_tzqvzi.jpg',
+    alt: 'Water supply system in Juba city',
+    caption: 'Water supply system in Juba city',
+    
+    description: 'consulting services in electro mechanical design for recirculation pumping system and pipeline design calculations ',
+    category: 'Healthcare',
+    duration: '1993-1995',
+  },
+  {
     src: 'https://res.cloudinary.com/dws2bgxg4/image/upload/v1723387772/kituiwatersupply_dqgr4t.jpg',
     alt: 'Kitui Water Supply',
     caption: 'Kitui Water Supply',
