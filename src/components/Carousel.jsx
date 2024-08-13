@@ -103,109 +103,55 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 10000); // Change slide every 10 seconds
+    }, 8000); // Change slide every 8 seconds
 
     return () => clearInterval(interval);
-  }, []);
-
-  const handlePrev = () => {
-    setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
+  }, [images.length]);
 
   return (
-    <div className="relative w-full mt-100" data-carousel="slide">
-      <div className="relative overflow-hidden rounded-lg md:h-96">
+    <div className="relative w-full overflow-hidden rounded-lg">
+      <div className="relative flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
+          <div key={index} className="min-w-full h-64 md:h-96 flex-shrink-0">
             <img
               src={image.src}
-              className="block w-full h-full object-cover"
               alt={image.alt}
+              className="w-full h-full object-cover"
             />
-            <div
-              className={`absolute inset-0 bg-gradient-to-t from-black/30 via-black/15 to-transparent flex flex-col justify-center items-center text-white p-4 text-center transition-transform mt-20 duration-1000 ease-in-out ${
-                index === currentSlide ? 'transform translate-y-0' : 'transform translate-y-full'
-              } delay-1000`}
-            >
-              <h2 className="text-md">{image.caption}</h2>
-              <p className="mt-2 text-sm">{image.description}</p>
+            <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
+              <h2 className="text-lg md:text-xl">{image.caption}</h2>
+              <p className="mt-2 text-sm md:text-base">{image.description}</p>
             </div>
           </div>
         ))}
       </div>
-  
-      <div className="absolute z-30 flex space-x-3 bottom-5 left-1/2 transform -translate-x-1/2">
+
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
             key={index}
-            type="button"
-            className={`w-3 h-3 rounded-full ${
-              index === currentSlide ? 'bg-orange-500' : 'bg-gray-400'
-            }`}
-            aria-current={index === currentSlide}
-            aria-label={`Slide ${index + 1}`}
             onClick={() => setCurrentSlide(index)}
-          ></button>
+            className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-orange-500' : 'bg-gray-400'}`}
+          />
         ))}
       </div>
-  
+
       <button
-        type="button"
-        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        onClick={handlePrev}
+        onClick={() => setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-white/70 rounded-full shadow-lg hover:bg-white/90"
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-orange-500">
-          <svg
-            className="w-4 h-4 text-orange-500 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 1 1 5l4 4"
-            />
-          </svg>
-          <span className="sr-only">Previous</span>
-        </span>
+        <svg className="w-4 h-4 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+        </svg>
       </button>
-  
+
       <button
-        type="button"
-        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        onClick={handleNext}
+        onClick={() => setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-white/70 rounded-full shadow-lg hover:bg-white/90"
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-orange-500">
-          <svg
-            className="w-4 h-4 text-orange-500 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 9l4-4-4-4"
-            />
-          </svg>
-          <span className="sr-only">Next</span>
-        </span>
+        <svg className="w-4 h-4 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+        </svg>
       </button>
     </div>
   );
