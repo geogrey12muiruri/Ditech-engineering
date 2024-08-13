@@ -25,7 +25,7 @@ const Hero = () => {
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
-        /* Carousel component positioned in the background */
+       
         <div className="absolute inset-0 z-0">
           {/* <HeroCarousel /> */}
         </div>
