@@ -9,8 +9,7 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import HeroCarousel from "./HeroCarousel"; // Import your carousel component
-import Carousel from "./Carousel";
-
+import Carousel from "./Carousel"
 
 const Hero = () => {
   const parallaxRef = useRef(null);
