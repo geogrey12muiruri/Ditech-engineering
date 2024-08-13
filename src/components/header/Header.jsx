@@ -96,6 +96,13 @@ const Header = () => {
           </Button>
         </div>
       </header>
+
+      {/* create a small space between this component and the components below it */}
+      <div className="h-20 lg:h-24">
+        {/* this space is created by the height of the header */}
+      </div>
+
+
      
     </>
   );

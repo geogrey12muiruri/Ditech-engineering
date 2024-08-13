@@ -112,13 +112,14 @@ const Carousel = () => {
     <div className="relative w-full overflow-hidden rounded-lg">
       <div className="relative flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {images.map((image, index) => (
-          <div key={index} className="min-w-full h-64 md:h-96 flex-shrink-0 relative">
+          <div key={index} className="min-w-full h-64 md:h-96 flex-shrink-0 relative" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             <img
               src={image.src}
               alt={image.alt}
               className="w-full h-full object-cover opacity-100"
               loading="lazy" // Preload images
             />
+            <div className="absolute inset-0 bg-black/50"></div> {/* Dark overlay */}
             <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
               <h2 className="text-lg md:text-xl">{image.caption}</h2>
               <p className="mt-2 text-sm md:text-base">{image.description}</p>
@@ -158,4 +159,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Carousel
