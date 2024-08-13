@@ -427,7 +427,7 @@ const Projects = () => {
           {/* Conditionally render projects without images */}
           {showProjectsWithoutImages && (
             <div className="overflow-x-auto mt-8">
-              <table className="min-w-full bg-slate-900 rounded-lg shadow-md">
+              <table className="min-w-full bg-white rounded-lg shadow-md">
                 <thead>
                   <tr className=" text-black">
                     <th className="py-2 px-4">Title</th>

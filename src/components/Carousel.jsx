@@ -110,13 +110,14 @@ const Carousel = () => {
 
   return (
     <div className="relative w-full overflow-hidden rounded-lg">
-      <div className="relative flex" style={{ transform: `translateX(-${currentSlide * 100}%)`, transition: 'transform 0.8s ease-in-out' }}>
+      <div className="relative flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {images.map((image, index) => (
           <div key={index} className="min-w-full h-64 md:h-96 flex-shrink-0 relative">
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-100"
+              loading="lazy" // Preload images
             />
             <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
               <h2 className="text-lg md:text-xl">{image.caption}</h2>
@@ -125,7 +126,7 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-  
+
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
@@ -135,7 +136,7 @@ const Carousel = () => {
           />
         ))}
       </div>
-  
+
       <button
         onClick={() => setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
         className="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-white/70 rounded-full shadow-lg hover:bg-white/90"
@@ -144,7 +145,7 @@ const Carousel = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-  
+
       <button
         onClick={() => setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
         className="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-white/70 rounded-full shadow-lg hover:bg-white/90"

@@ -35,19 +35,20 @@ const Header = () => {
         }`}
       >
         <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-4">
-          <div className="flex items-center">
-            <img
-              src={logo}
-              alt="Ditech Engineering Logo"
-              className="h-16 md:h-20 lg:h-24 w-auto"
-            />
-            <div className="ml-4">
-              <p className="text-sm md:text-base">Ditech Engineering Limited.</p>
-              <p className="text-xs font-light text-orange-500">
-                Electro-mechanical turn-key Engineers
-              </p>
-            </div>
-          </div>
+        <div className="flex flex-col items-center">
+  <img
+    src={logo}
+    alt="Ditech Engineering Logo"
+    className="h-16 md:h-20 lg:h-24 w-auto"
+  />
+  <div className="text-center">
+    <p className="text-sm md:text-base">Ditech Engineering Services.</p>
+    <p className="text-xs font-light text-orange-500">
+      Electro-mechanical turn-key Engineers
+    </p>
+  </div>
+</div>
+
 
           <nav
             className={`${
@@ -91,14 +92,11 @@ const Header = () => {
             px="px-3"
             onClick={toggleNavigation}
           >
-            <MenuSvg openNavigation={openNavigation} />
+            <MenuSvg openNavigation={openNavigation} className="text-orange-500" />
           </Button>
         </div>
       </header>
-      {/* Add a top padding to the main content to prevent it from being blocked by the header */}
-      <div className="pt-24 lg:pt-32">
-        {/* Your main content goes here */}
-      </div>
+     
     </>
   );
 };
