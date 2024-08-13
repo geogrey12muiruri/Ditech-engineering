@@ -14,8 +14,10 @@ const Hero = () => {
   const parallaxRef = useRef(null);
 
   return (
+    <>
+    <Carousel />
     <Section
-      className="relative overflow-hidden"
+      className="relative overflow-hidden mt-500"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -24,22 +26,13 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         /* Carousel component positioned in the background */
         <div className="absolute inset-0 z-0">
-          <HeroCarousel />
+          {/* <HeroCarousel /> */}
         </div>
 
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h5 className="h5 mb-6 mt-20">
            
-            <span className="inline-block relative">
-              A Leading Electromechanical Consultants{" "}
-              <img
-                src={curve}
-                className="absolute top-full left-0 w-full xl:-mt-2"
-                width={624}
-                height={28}
-                alt="Curve"
-              />
-            </span>
+            
           </h5>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             At Ditech Engineering Limited., our vision is to be the market leader in electromechanical services across the African region. With a commitment to total quality management, we provide high-quality installation and maintenance services, ensuring exceptional customer satisfaction.
@@ -52,7 +45,7 @@ const Hero = () => {
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+              <div className="h-[1.4rem] bg-n-8 rounded-t-[0.9rem]" />
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={robot}
@@ -98,6 +91,7 @@ const Hero = () => {
 
       <BottomLine />
     </Section>
+    </>
   );
 };
 

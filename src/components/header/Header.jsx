@@ -6,7 +6,7 @@ import Button from "../Button";
 import MenuSvg from "../../assets/svg/MenuSvg";
 import { HamburgerMenu } from "../design/Header";
 import { useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.png";
 
 const Header = () => {
   const pathname = useLocation();
@@ -31,17 +31,21 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 bg-opacity-75 lg:backdrop-blur-sm ${
+      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90  lg:backdrop-blur-sm ${
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-      <div className="flex flex-col items-center p-4">
-  <img src={logo} alt="Ditech Engineering Logo" className="h-10 md:h-12" />
-  <p className="text-sm md:text-base mt-2">Ditech Engineering Limited.</p>
-  <p className="text-xs font-light text-orange-500 mt-1">Electro-mechanical turn-key Engineers</p>
-</div>
-
+        <div className="flex flex-col items-center p-4">
+        <img 
+  src={logo} 
+  alt="Ditech Engineering Logo" 
+  className="h-20 md:h-26 lg:h-24 w-auto" 
+/>
+ {/* Adjusted the height of the logo */}
+          <p className="text-sm md:text-base mt-2">Ditech Engineering Limited.</p>
+          <p className="text-xs font-light text-orange-500 mt-1">Electro-mechanical turn-key Engineers</p>
+        </div>
 
         <nav
           className={`${

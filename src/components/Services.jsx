@@ -98,31 +98,30 @@ const FeaturedProjects = () => {
   };
 
   return (
-    <div className="bg-black">
-      <section id="featured" className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30">
+    <div >
+      <section id="featured" className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-white">
         <div className="relative mx-auto max-w-5xl text-center">
-          <span className="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+          <span className="text-black my-3 flex items-center justify-center font-medium uppercase tracking-wider">
             Featured Projects
           </span>
-          <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+          <h2 className="block w-full text-black bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
             Our Remarkable Projects
           </h2>
-          <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
+          <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-black">
             Explore some of the most notable projects we have worked on. Each project highlights our commitment to quality and excellence.
           </p>
         </div>
 
         <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className="rounded-md border border-neutral-800 bg-neutral-900/50 text-center shadow">
+            <div key={index} className="rounded-md border border-neutral-800 bg-white text-center shadow">
               <div className="relative">
                 <img src={project.image} alt={`Project ${index + 1}`} className="w-full h-50 object-cover mb-4 rounded-t-md" />
-                <div className="absolute bottom-0 w-full p-4 bg-black bg-opacity-50">
-                  <h3 className="text-white">{project.title}</h3>
-                </div>
+               
               </div>
               <div className="p-8">
-                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                 <h3 className="text-black font-bold">{project.title}</h3>
+                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-black">
                   {visibleDescription[index] ? project.description : `${project.description.substring(0, 100)}...`}
                   <button
                     onClick={() => toggleDescriptionVisibility(index)}

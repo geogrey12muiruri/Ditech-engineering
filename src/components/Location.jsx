@@ -3,10 +3,10 @@ import React from 'react';
 const Location = () => {
     return (
         <section>
-            <div className="max-w-7xl mx-auto bg-slate-950 py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+            <div className="max-w-7xl mx-auto bg-white py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-extrabold text-white">Visit Our Location</h2>
-                    <p className="mt-4 text-lg text-white">
+                    <h2 className="text-3xl font-extrabold text-black">Visit Our Location</h2>
+                    <p className="mt-4 text-lg text-black">
                     We are conveniently located at the Nextgen Building on Mombasa Road, next to EKA Hotel.
                        
                     </p>
@@ -26,19 +26,19 @@ const Location = () => {
                         <div>
                             <div className="max-w-full mx-auto rounded-lg overflow-hidden">
                                 <div className="px-6 py-4">
-                                    <h3 className="text-lg  font-medium text-white">Our Address</h3>
-                                    <p className="mt-1 text-white">5th Floor, Nextgen Building, Mombasa Road next to EKA Hotel</p>
+                                    <h3 className="text-lg  font-medium text-black">Our Address</h3>
+                                    <p className="mt-1 text-black">5th Floor, Nextgen Building, Mombasa Road next to EKA Hotel</p>
                                 </div>
                                 <div className="border-t border-gray-200 px-6 py-4">
-                                    <h3 className="text-lg font-medium text-white">Hours</h3>
-                                    <p className="mt-1 text-white">Monday - Friday: 8am - 5pm</p>
-                                    <p className="mt-1 text-white">Saturday: 8am - 1pm</p>
-                                    <p className="mt-1 text-white">Sunday: Closed</p>
+                                    <h3 className="text-lg font-medium text-black">Hours</h3>
+                                    <p className="mt-1 text-black">Monday - Friday: 8am - 5pm</p>
+                                    <p className="mt-1 text-black">Saturday: 8am - 1pm</p>
+                                    <p className="mt-1 text-black">Sunday: Closed</p>
                                 </div>
                                 <div className="border-t border-gray-200 px-6 py-4">
-                                    <h3 className="text-lg font-medium text-white">Contact</h3>
+                                    <h3 className="text-lg font-medium text-black">Contact</h3>
                                     
-                                    <p className="mt-1 text-white">Telephone: +254 -20-3517066, +254(0)728 162 245, +254(0)735 162 245</p>
+                                    <p className="mt-1 text-black">Telephone: +254 -20-3517066, +254(0)728 162 245, +254(0)735 162 245</p>
                                     <p classsName="mt-1 text-white">Email:ndiewo@ditech.co.ke </p>
                                 </div>
                             </div>

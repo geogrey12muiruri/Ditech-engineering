@@ -400,19 +400,19 @@ const Projects = () => {
   return (
     <>
     <Carousel />
-      <section className="bg-gray-100 py-8" id="projects">
+      <section className=" py-8" id="projects">
         <div className="container mx-auto px-4">
          
 
           {/* Projects with images */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             {shuffledProjectsWithImages.map((project) => (
-              <div key={project.id} className="bg-white p-4 rounded-lg shadow-md" data-aos="fade-up">
+              <div key={project.id} className="p-4 rounded-lg shadow-md" data-aos="fade-up">
                 {project.image && (
                   <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-md mb-4" />
                 )}
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-2">{project.description}</p>
+                <p className="text-black mb-2">{project.description}</p>
               </div>
             ))}
           </div>
@@ -429,7 +429,7 @@ const Projects = () => {
             <div className="overflow-x-auto mt-8">
               <table className="min-w-full bg-slate-900 rounded-lg shadow-md">
                 <thead>
-                  <tr className="bg-gray-200 text-gray-700">
+                  <tr className=" text-black">
                     <th className="py-2 px-4">Title</th>
                     <th className="py-2 px-4">Description</th>
                   </tr>
