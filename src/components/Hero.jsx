@@ -18,7 +18,7 @@ const Hero = () => {
     <>
     <Carousel />
     <Section
-      className="relative overflow-hidden bg-white "
+      className="relative overflow-hidden"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
